@@ -1,0 +1,14 @@
+label: Fonts
+status: ready
+
+context:
+  typefaces:
+    - id: sans
+      name: Montserrat
+      description: |
+        <p>Montserrat was developed by Julieta Ulanovsky in 2010. She describes the font as, "The old posters and signs in the traditional neighborhood of Buenos Aires called Montserrat inspired me to design a typeface that rescues the beauty of urban typography from the first half of the twentieth century. The goal is to rescue what is in Montserrat and set it free, under a free, libre and open source license, the SIL Open Font License."</p>
+
+    - id: serif
+      name: Sorts Mill Goudy
+      description: |
+        <p>Sorts Mill Goudy is a revival of Frederic Goudy's 'Goudy Oldstyle' with Regular and Italic styles, and extended Latin character coverage. Frederic Goudy was an Illinois printer, artist, and type designer.</p>

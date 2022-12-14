@@ -1,0 +1,657 @@
+// Color
+$color-primary:              #2C5491; 
+$color-primary-darker:       #244473;
+$color-primary-darkest:      #112e51;
+
+$color-primary-alt:          #02bfe7;
+$color-primary-alt-dark:     #00a6d2;
+$color-primary-alt-darkest:  #046b99;
+$color-primary-alt-light:    #9bdaf1; // lighten($color-primary-alt, 60%)
+$color-primary-alt-lightest: #e1f3f8; // lighten($color-primary-alt, 90%)
+
+$color-secondary:            #BA2E3A;
+$color-secondary-dark:       #A02A34;
+$color-secondary-darkest:    #981b1e;
+$color-secondary-light:      #D68289; // lighten($color-secondary, 60%)
+$color-secondary-lightest:   #F8EAEB; // lighten($color-secondary, 90%)
+
+$color-white:                #ffffff;
+$color-base:                 #212121;
+
+$color-gray-dark:            #323a45;
+$color-gray:                 #5b616b; // lighten($color-gray-dark, 20%)
+$color-gray-light:           #aeb0b5; // lighten($color-gray-dark, 60%)
+$color-gray-lighter:         #d6d7d9; // lighten($color-gray-dark, 80%)
+$color-gray-lightest:        #f1f1f1; // lighten($color-gray-dark, 91%)
+
+$color-gray-warm-dark:       #494440;
+$color-gray-warm-light:      #e4e2e0; // lighten($color-gray-warm-dark, 90%)
+$color-gray-cool-light:      #dce4ef; // lighten($color-primary, 90%)
+
+$color-gold:                 #DCB13C ;
+$color-gold-light:           #E3C163; //  lighten($color-gold, 20%)
+$color-gold-lighter:         #EAD08A; //  lighten($color-gold, 60%)
+$color-gold-lightest:        #F8EFD8; //  lighten($color-gold, 83%)
+
+$color-green:                #339D61;  
+$color-green-light:          #5EC88C; // lighten($color-green, 20%)
+$color-green-lighter:        #9EDEBA; // lighten($color-green, 60%)
+$color-green-lightest:       #DFF4E8; // lighten($color-green, 60%)
+
+$color-purple:               #BD5190;  
+$color-purple-light:         #E672B6; // lighten($color-pursple, 20%)
+$color-purple-lighter:       #F0AAD3; // lighten($color-purple, 60%)
+$color-purple-lightest:      #FAE3F0; // lighten($color-purple, 60%)
+
+$color-cool-blue:            #205493;
+$color-cool-blue-light:      #4773aa; // lighten($color-cool-blue, 20%)
+$color-cool-blue-lighter:    #8ba6ca; // lighten($color-cool-blue, 60%)
+$color-cool-blue-lightest:   #dce4ef; // lighten($color-cool-blue, 90%)
+
+$color-link:                 #0071bc;
+$color-focus:                #2C5491;
+$color-hover:                #2C5491;
+$color-active:               #2C5491;
+$color-visited:              #4c2c92;
+
+$color-flag-blue:            #5E9AC8;
+$color-flag-red:             #BA2E3A;
+
+$color-seal-ring-blue:       #005488;
+$color-seal-sky-blue:        #71C8E6;
+$color-seal-ship-brown:      #9A574B;
+$color-seal-banner-red:      #D8232A;
+$color-seal-green:           #009949;
+$color-seal-yellow:          #FFF101;
+$color-seal-beige:           #F5C4AD;
+
+
+.usa-color-outline .usa-color-text {
+    box-shadow: inset 0 0 0 1px #5b616b;
+}
+
+.usa-color-text {
+    font-weight: 400;
+    margin-bottom: .4rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+
+@mixin text-color($text_color) {
+  color: $text_color;
+}
+
+.usa-color-text-primary-darkest {
+	@include text-color($color-primary-darkest);
+}
+
+.usa-color-text-primary-darker {
+	@include text-color($color-primary-darker);
+}
+
+.usa-color-text-primary {
+	@include text-color($color-primary)
+}
+
+.usa-color-text-cool-blue-light {
+	@include text-color($color-cool-blue-light);
+}
+
+.usa-color-text-primary-alt-darkest {
+	@include text-color($color-primary-alt-darkest);
+}
+
+.usa-color-text-green {
+	@include text-color($color-green);
+}
+
+.usa-color-text-purple {
+	@include text-color($color-purple);
+}
+
+.usa-color-text-visited {
+	@include text-color($color-visited);
+}
+
+.usa-color-text-base {
+	@include text-color($color-base);
+}
+
+.usa-color-text-gray-dark {
+	@include text-color($color-gray-dark);
+}
+
+.usa-color-text-gray {
+	@include text-color($color-gray);
+}
+
+.usa-color-text-gray-warm-dark {
+	@include text-color($color-gray-warm-dark);
+}
+
+.usa-color-text-secondary-darkest {
+	@include text-color($color-secondary-darkest);
+}
+
+.usa-color-text-secondary-dark {
+	@include text-color($color-secondary-dark);
+}
+
+.usa-color-text-secondary {
+	@include text-color($color-secondary);
+}
+
+.usa-color-text-white {
+	@include text-color($color-white);
+}
+
+.usa-background-dark {
+	@include text-color($color-white);
+	a {
+		@include text-color($color-gray-lighter);
+		&:hover {
+			@include text-color($color-white);
+		}
+		&:visited {
+			@include text-color($color-gray-lighter);
+		}
+	}
+}
+
+@mixin bg-color($bg_color) {
+  background-color: $bg_color;
+}
+
+.usa-color-base {
+	@include bg-color($color-base);
+}
+
+.usa-color-gray-warm-dark {
+	@include bg-color($color-gray-warm-dark);
+}
+
+.usa-color-gray-dark {
+	@include bg-color($color-gray-dark);
+}
+
+.usa-color-gray {
+	@include bg-color($color-gray);
+}
+
+.usa-color-primary-darkest {
+	@include bg-color($color-primary-darkest);
+}
+
+.usa-color-primary-darker {
+	@include bg-color($color-primary-darker);
+}
+
+.usa-color-primary {
+	@include bg-color($color-primary);
+}
+
+.usa-color-cool-blue-light {
+	@include bg-color($color-cool-blue-light);
+}
+
+.usa-color-primary-alt-darkest {
+	@include bg-color($color-primary-alt-darkest);
+}
+
+.usa-color-primary-alt-dark {
+	@include bg-color($color-primary-alt-dark);
+}
+
+.usa-color-primary-alt {
+	@include bg-color($color-primary-alt);
+}
+
+.usa-color-green {
+	@include bg-color($color-green);
+}
+
+.usa-color-green-light {
+	@include bg-color($color-green-light);
+}
+
+.usa-color-gold {
+	@include bg-color($color-gold);
+}
+
+.usa-color-gold-light {
+	@include bg-color($color-gold-light);
+}
+
+.usa-color-purple {
+	@include bg-color($color-purple);
+}
+
+.usa-color-purple-light {
+	@include bg-color($color-purple-light);
+}
+
+.usa-color-secondary-darkest {
+	@include bg-color($color-secondary-darkest);
+}
+
+.usa-color-secondary-dark {
+	@include bg-color($color-secondary-dark);
+}
+
+.usa-color-secondary {
+	@include bg-color($color-secondary);
+}
+
+.usa-color-gray-light {
+	@include bg-color($color-gray-light);
+}
+
+.usa-color-gray-lighter {
+	@include bg-color($color-gray-lighter);
+}
+
+.usa-color-gray-warm-light {
+	@include bg-color($color-gray-warm-light);
+}
+
+.usa-color-cool-blue-lighter {
+	@include bg-color($color-cool-blue-lighter);
+}
+
+.usa-color-cool-blue-lightest {
+	@include bg-color($color-cool-blue-lightest);
+}
+
+.usa-color-primary-alt-lightest {
+	@include bg-color($color-primary-alt-lightest);
+}
+
+.usa-color-green-lighter {
+	@include bg-color($color-green-lighter);
+}
+
+.usa-color-green-lightest {
+	@include bg-color($color-green-lightest);
+}
+
+.usa-color-gold-lighter {
+	@include bg-color($color-gold-lighter);
+}
+
+.usa-color-gold-lightest {
+	@include bg-color($color-gold-lightest);
+}
+
+.usa-color-purple-lighter {
+	@include bg-color($color-purple-lighter);
+}
+
+.usa-color-purple-lightest {
+	@include bg-color($color-purple-lightest);
+}
+
+.usa-color-secondary-lightest {
+	@include bg-color($color-secondary-lightest);
+}
+
+.usa-background-dark {
+	@include bg-color($color-gray-dark)
+}
+
+.usa-color-flag-blue {
+	@include bg-color($color-flag-blue);
+}
+
+.usa-color-flag-red {
+	@include bg-color($color-flag-red)
+}
+
+.usa-color-seal-ring-blue {
+	@include bg-color($color-seal-ring-blue);
+}
+
+.usa-color-seal-sky-blue {
+	@include bg-color($color-seal-sky-blue)
+}
+
+.usa-color-seal-ship-brown {
+	@include bg-color($color-seal-ship-brown);
+}
+
+.usa-color-seal-banner-red {
+	@include bg-color($color-seal-banner-red)
+}
+
+.usa-color-seal-green {
+	@include bg-color($color-seal-green);
+}
+
+.usa-color-seal-yellow {
+	@include bg-color($color-seal-yellow)
+}
+
+.usa-color-seal-beige {
+	@include bg-color($color-seal-beige)
+}
+
+// Styleguide Color Swatch styling
+
+usa-color-short {
+  height: 7rem;
+  margin-bottom: 1rem; }
+
+.usa-color-name {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1em; }
+  @media screen and (min-width: 600px) {
+    .usa-color-name {
+      margin: 0; } }
+
+.usa-color-row {
+  margin-bottom: 3rem; }
+  @media screen and (min-width: 600px) {
+    .usa-color-row .color-big {
+      float: left;
+      padding-right: 4%;
+      width: 32%; } }
+  .usa-color-row .color-small {
+    float: left;
+    margin-right: 0;
+    width: 50%; }
+    @media screen and (min-width: 600px) {
+      .usa-color-row .color-small {
+        width: 17%; } }
+  .usa-color-row p {
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    font-size: 1.5rem; }
+    .usa-color-row p:last-of-type {
+      font-size: 11px; }
+
+.usa-primary-color-section {
+  margin-bottom: 0; }
+  @media screen and (min-width: 600px) {
+    .usa-primary-color-section {
+      margin-bottom: 8rem; } }
+  .usa-primary-color-section .usa-color-square {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-bottom: 7rem;
+    padding-bottom: 50%;
+    position: relative; }
+    .usa-primary-color-section .usa-color-square:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 600px) {
+      .usa-primary-color-section .usa-color-square {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%;
+        margin-bottom: 0;
+        padding-bottom: 19%; }
+        .usa-primary-color-section .usa-color-square:last-child {
+          margin-right: 0; } }
+  .usa-primary-color-section .usa-mobile-end-row {
+    margin-right: 0; }
+    @media screen and (min-width: 600px) {
+      .usa-primary-color-section .usa-mobile-end-row {
+        margin-right: 2.35765%; } }
+  .usa-primary-color-section .usa-color-name {
+    margin: 0; }
+
+.usa-color-inner-content {
+  position: absolute;
+  top: 100%; }
+
+.usa-color-hex {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-weight: 700; }
+
+.usa-color-text {
+  padding: 1rem 2rem;
+  font-weight: 700;
+  margin-bottom: .4rem; }
+
+.usa-color-outline .usa-color-text {
+  box-shadow: inset 0 0 0 1px #5b616b; }
+
+.usa-color-primary {
+  background-color: #0071bc; }
+
+.usa-color-primary-darker {
+  background-color: #205493; }
+
+.usa-color-primary-darkest {
+  background-color: #112e51; }
+
+.usa-color-base {
+  background-color: #212121; }
+
+.usa-color-gray-dark {
+  background-color: #323a45; }
+
+.usa-color-gray-light {
+  background-color: #aeb0b5; }
+
+.usa-color-white {
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 1px #5b616b; }
+
+.usa-color-primary-alt {
+  background-color: #02bfe7; }
+
+.usa-color-primary-alt-dark {
+  background-color: #00a6d2; }
+
+.usa-color-primary-alt-darkest {
+  background-color: #046b99; }
+
+.usa-color-primary-alt-light {
+  background-color: #9bdaf1; }
+
+.usa-color-primary-alt-lightest {
+  background-color: #e1f3f8; }
+
+.usa-color-secondary {
+  background-color: #e31c3d; }
+
+.usa-color-secondary-dark {
+  background-color: #cd2026; }
+
+.usa-color-secondary-darkest {
+  background-color: #981b1e; }
+
+.usa-color-secondary-light {
+  background-color: #e59393; }
+
+.usa-color-secondary-lightest {
+  background-color: #f9dede; }
+
+.usa-color-gray {
+  background-color: #5b616b; }
+
+.usa-color-gray-lighter {
+  background-color: #d6d7d9; }
+
+.usa-color-gray-lightest {
+  background-color: #f1f1f1; }
+
+.usa-color-gray-warm-dark {
+  background-color: #494440; }
+
+.usa-color-gray-warm-light {
+  background-color: #e4e2e0; }
+
+.usa-color-gray-cool-light {
+  background-color: #dce4ef; }
+
+.usa-color-gold {
+  background-color: #fdb81e; }
+
+.usa-color-gold-light {
+  background-color: #f9c642; }
+
+.usa-color-gold-lighter {
+  background-color: #fad980; }
+
+.usa-color-gold-lightest {
+  background-color: #fff1d2; }
+
+.usa-color-green {
+  background-color: #2e8540; }
+
+.usa-color-green-light {
+  background-color: #4aa564; }
+
+.usa-color-green-lighter {
+  background-color: #94bfa2; }
+
+.usa-color-green-lightest {
+  background-color: #e7f4e4; }
+
+.usa-color-cool-blue {
+  background-color: #205493; }
+
+.usa-color-cool-blue-light {
+  background-color: #4773aa; }
+
+.usa-color-cool-blue-lighter {
+  background-color: #8ba6ca; }
+
+.usa-color-cool-blue-lightest {
+  background-color: #dce4ef; }
+
+.usa-color-focus {
+  background-color: #aeb0b5; }
+
+.usa-color-visited {
+  background-color: #4c2c92; }
+
+.usa-color-flag-blue {
+  background-color: #5E9AC8; }
+
+.usa-color-flag-red {
+  background-color: #BA2E3A; }
+
+.usa-color-seal-ring-blue {
+  background-color: #005488; }
+
+.usa-color-seal-sky-blue {
+  background-color: #71C8E6; }
+
+.usa-color-seal-ship-brown {
+  background-color: #9A574B; }
+
+.usa-color-seal-banner-red {
+  background-color: #D8232A; }
+
+.usa-color-seal-green {
+  background-color: #009949; }
+
+.usa-color-seal-yellow {
+  background-color: #FFF101; }
+
+.usa-color-seal-beige {
+  background-color: #F5C4AD; }
+
+.usa-color-text-primary-darkest {
+  color: #112e51; }
+
+.usa-color-text-primary-darker {
+  color: #205493; }
+
+.usa-color-text-primary {
+  color: #0071bc; }
+
+.usa-color-text-cool-blue-light {
+  color: #4773aa; }
+
+.usa-color-text-primary-alt-darkest {
+  color: #046b99; }
+
+.usa-color-text-green {
+  color: #2e8540; }
+
+.usa-color-text-visited {
+  color: #4c2c92; }
+
+.usa-color-text-gray-dark {
+  color: #323a45; }
+
+.usa-color-text-gray {
+  color: #5b616b; }
+
+.usa-color-text-gray-warm-dark {
+  color: #494440; }
+
+.usa-color-text-secondary-darkest {
+  color: #981b1e; }
+
+.usa-color-text-secondary-dark {
+  color: #cd2026; }
+
+.usa-color-text-secondary {
+  color: #e31c3d; }
+
+.usa-color-text-white {
+  color: #ffffff; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
